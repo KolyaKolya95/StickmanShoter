@@ -264,12 +264,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 932772909}
-        m_MethodName: 
+      - m_Target: {fileID: 932772914}
+        m_MethodName: StartSingGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -413,7 +413,7 @@ RectTransform:
   m_GameObject: {fileID: 932772909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 100}
-  m_LocalScale: {x: 0.02054721, y: 0.02054721, z: 0.02054721}
+  m_LocalScale: {x: 0.0222103, y: 0.0222103, z: 0.0222103}
   m_Children:
   - {fileID: 1001777523}
   - {fileID: 573674128}

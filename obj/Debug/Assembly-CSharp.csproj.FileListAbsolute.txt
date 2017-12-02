@@ -36,3 +36,4 @@ D:\MyPrograms\Unity3D\StickmanShoter\Temp\bin\Debug\UnityEngine.SpatialTracking.
 D:\MyPrograms\Unity3D\StickmanShoter\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 D:\MyPrograms\Unity3D\StickmanShoter\obj\Debug\Assembly-CSharp.dll
 D:\MyPrograms\Unity3D\StickmanShoter\obj\Debug\Assembly-CSharp.pdb
+D:\MyPrograms\Unity3D\StickmanShoter\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

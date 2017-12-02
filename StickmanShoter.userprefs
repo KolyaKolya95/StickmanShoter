@@ -1,13 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerScript\BulateStr.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MenuScripts\GameMenu.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerScript\ButtonMove\MovePlayer.cs" Line="18" Column="72" />
-      <File FileName="Assets\Scripts\PlayerScript\BulateStr.cs" Line="27" Column="36" />
-      <File FileName="Assets\Scripts\PlayerScript\DestroyWithDelay.cs" Line="11" Column="31" />
-      <File FileName="Assets\Scripts\PlayerScript\ButtonMove\FirePlayer.cs" Line="37" Column="1" />
-      <File FileName="Assets\Scripts\PlayerScript\ButtonMove\FireEnemi.cs" Line="12" Column="36" />
-      <File FileName="Assets\Scripts\MenuScripts\MainManu.cs" Line="9" Column="3" />
+      <File FileName="Assets\Scripts\PlayerScript\BulateStr.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerScript\PlayerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemyScripts\EnemyMove.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemyScripts\FireEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerScript\FirePlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MenuScripts\GameMenu.cs" Line="36" Column="31" />
+      <File FileName="Assets\Scripts\MenuScripts\MainManu.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

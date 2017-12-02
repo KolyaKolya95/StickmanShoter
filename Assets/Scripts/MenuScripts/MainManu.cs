@@ -1,11 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainManu : MonoBehaviour {
 
 	public void StartMultiplayer()
 	{
-		Application.LoadLevel ("Game");
+		SceneManager.LoadScene ("MultiplayerGame");
+	}
+
+	public void StartSingGame()
+	{
+		SceneManager.LoadScene ("SinglGame");
 	}
 }

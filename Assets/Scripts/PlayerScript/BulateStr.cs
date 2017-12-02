@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Experimental.UIElements;
 
 public class BulateStr : MonoBehaviour {
+
+	public GameObject GameOverPanel;
 
 	public Vector2 speed;
 
@@ -10,6 +14,7 @@ public class BulateStr : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		GameOverPanel.SetActive (false);
 		rb = GetComponent<Rigidbody2D> ();
 		rb.velocity = speed;
 		
@@ -24,7 +29,7 @@ public class BulateStr : MonoBehaviour {
 	{
 		if (fire.gameObject.CompareTag("Player")) 
 		{
-			Application.LoadLevel ("MainMenu");
+			GameOverPanel.SetActive (true);
 		}
 	}
 }
