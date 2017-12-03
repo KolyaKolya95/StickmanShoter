@@ -5,25 +5,39 @@ using UnityEngine;
 public class FirePlayer : MonoBehaviour {
 
 	public GameObject firePrefabs;
-	Transform firePosition;
+    Animator anim;
+    Transform firePosition;
 
-	// Use this for initialization
-	void Start () {
+    public AudioClip sound;
+
+    private AudioSource source { get { return GetComponent<AudioSource>(); } }
+
+    // Use this for initialization
+    void Start () {
+       // anim.SetInteger("State", 0);
+        //anim = GetComponent<Animator>();
 		firePosition = transform.Find("FirePos");
-	}
+        gameObject.AddComponent<AudioSource>();
+        source.clip = sound;
+        source.playOnAwake = false;
+    }
 	
 	// Update is called once per frame
 	void Update ()
 	{
+       // anim.SetInteger("State", 0);
+
 		if (Input.GetKeyDown (KeyCode.Space)) 
 		{
-			Fire ();
+          //  anim.SetInteger("State", 2);
+            Fire ();
 		}
 	}
 
 	public void Fire()
 	{
-		Instantiate (firePrefabs, firePosition.position, Quaternion.identity);
+        source.PlayOneShot(sound);
+        Instantiate (firePrefabs, firePosition.position, Quaternion.identity);
 	}
 
 	void OnCollisionEnter2D(Collision2D fire)

@@ -5,13 +5,20 @@ using UnityEngine;
 public class FireEnemi : MonoBehaviour {
 
 	public GameObject firePrefabs;
-	Transform firePosition;
+    public AudioClip sound;
 
-	// Use this for initialization
-	void Start () {
+    private AudioSource source { get { return GetComponent<AudioSource>(); } }
+    Transform firePosition;
 
+    // Use this for initialization
+    void Start ()
+    {
 		firePosition = transform.Find("FirePosEnemi");
-	}
+
+        gameObject.AddComponent<AudioSource>();
+        source.clip = sound;
+        source.playOnAwake = false;
+    }
 
 	// Update is called once per frame
 	void Update ()
@@ -24,7 +31,8 @@ public class FireEnemi : MonoBehaviour {
 
 	public void Fire()
 	{
-		Instantiate (firePrefabs, firePosition.position, Quaternion.identity);
+        source.PlayOneShot(sound);
+        Instantiate (firePrefabs, firePosition.position, Quaternion.identity);
 	}
 
 	void OnCollisionEnter2D(Collision2D fire)
